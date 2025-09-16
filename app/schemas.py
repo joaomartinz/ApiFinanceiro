@@ -30,3 +30,16 @@ class Despesa(DespesaBase):
     id: int
     class Config:
         orm_mode = True
+
+class ReceitaUpdate(BaseModel):
+    descricao: Optional[str] = None
+    valor: Optional[float] = None
+    data: Optional[date] = None
+    categoria: Optional[str] = None
+    
+class DespesaUpdate(BaseModel):
+    descricao: Optional[str] = None
+    valor: Optional[float] = None
+    data: Optional[date] = None
+    categoria: Optional[str] = None
+    
